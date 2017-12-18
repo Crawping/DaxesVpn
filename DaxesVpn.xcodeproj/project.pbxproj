@@ -9,19 +9,51 @@
 /* Begin PBXBuildFile section */
 		6F568BEB1FE834AE00B7C717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F568BEA1FE834AE00B7C717 /* AppDelegate.swift */; };
 		6F568BED1FE834AE00B7C717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F568BEC1FE834AE00B7C717 /* ViewController.swift */; };
-		6F568BF01FE834AE00B7C717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F568BEE1FE834AE00B7C717 /* Main.storyboard */; };
 		6F568BF21FE834AE00B7C717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F568BF11FE834AE00B7C717 /* Assets.xcassets */; };
 		6F568BF51FE834AE00B7C717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F568BF31FE834AE00B7C717 /* LaunchScreen.storyboard */; };
+		6F568BFE1FE834BF00B7C717 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F568BFD1FE834BF00B7C717 /* NetworkExtension.framework */; };
+		6F568C0C1FE8356800B7C717 /* DaxesVpnNetwork.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F568C041FE8356800B7C717 /* DaxesVpnNetwork.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F568C111FE835CC00B7C717 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F568BFD1FE834BF00B7C717 /* NetworkExtension.framework */; };
+		6F568C131FE8391900B7C717 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F568C121FE8391900B7C717 /* PacketTunnelProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F568C0A1FE8356800B7C717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F568BDF1FE834AE00B7C717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F568C031FE8356800B7C717;
+			remoteInfo = DaxesVpnNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F568C101FE8356800B7C717 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F568C0C1FE8356800B7C717 /* DaxesVpnNetwork.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F568BE71FE834AE00B7C717 /* DaxesVpn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaxesVpn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F568BEA1FE834AE00B7C717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F568BEC1FE834AE00B7C717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F568BEF1FE834AE00B7C717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F568BF11FE834AE00B7C717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F568BF41FE834AE00B7C717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F568BF61FE834AE00B7C717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F568BFD1FE834BF00B7C717 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		6F568BFF1FE834BF00B7C717 /* DaxesVpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaxesVpn.entitlements; sourceTree = "<group>"; };
+		6F568C041FE8356800B7C717 /* DaxesVpnNetwork.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DaxesVpnNetwork.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F568C081FE8356800B7C717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F568C091FE8356800B7C717 /* DaxesVpnNetwork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaxesVpnNetwork.entitlements; sourceTree = "<group>"; };
+		6F568C121FE8391900B7C717 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +61,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F568BFE1FE834BF00B7C717 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F568C011FE8356800B7C717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F568C111FE835CC00B7C717 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				6F568BE91FE834AE00B7C717 /* DaxesVpn */,
+				6F568C051FE8356800B7C717 /* DaxesVpnNetwork */,
 				6F568BE81FE834AE00B7C717 /* Products */,
+				6F568BFC1FE834BF00B7C717 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				6F568BE71FE834AE00B7C717 /* DaxesVpn.app */,
+				6F568C041FE8356800B7C717 /* DaxesVpnNetwork.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +98,32 @@
 		6F568BE91FE834AE00B7C717 /* DaxesVpn */ = {
 			isa = PBXGroup;
 			children = (
+				6F568BFF1FE834BF00B7C717 /* DaxesVpn.entitlements */,
 				6F568BEA1FE834AE00B7C717 /* AppDelegate.swift */,
 				6F568BEC1FE834AE00B7C717 /* ViewController.swift */,
-				6F568BEE1FE834AE00B7C717 /* Main.storyboard */,
 				6F568BF11FE834AE00B7C717 /* Assets.xcassets */,
 				6F568BF31FE834AE00B7C717 /* LaunchScreen.storyboard */,
 				6F568BF61FE834AE00B7C717 /* Info.plist */,
 			);
 			path = DaxesVpn;
+			sourceTree = "<group>";
+		};
+		6F568BFC1FE834BF00B7C717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F568BFD1FE834BF00B7C717 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F568C051FE8356800B7C717 /* DaxesVpnNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				6F568C081FE8356800B7C717 /* Info.plist */,
+				6F568C091FE8356800B7C717 /* DaxesVpnNetwork.entitlements */,
+				6F568C121FE8391900B7C717 /* PacketTunnelProvider.swift */,
+			);
+			path = DaxesVpnNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +136,34 @@
 				6F568BE31FE834AE00B7C717 /* Sources */,
 				6F568BE41FE834AE00B7C717 /* Frameworks */,
 				6F568BE51FE834AE00B7C717 /* Resources */,
+				6F568C101FE8356800B7C717 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F568C0B1FE8356800B7C717 /* PBXTargetDependency */,
 			);
 			name = DaxesVpn;
 			productName = DaxesVpn;
 			productReference = 6F568BE71FE834AE00B7C717 /* DaxesVpn.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6F568C031FE8356800B7C717 /* DaxesVpnNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F568C0D1FE8356800B7C717 /* Build configuration list for PBXNativeTarget "DaxesVpnNetwork" */;
+			buildPhases = (
+				6F568C001FE8356800B7C717 /* Sources */,
+				6F568C011FE8356800B7C717 /* Frameworks */,
+				6F568C021FE8356800B7C717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaxesVpnNetwork;
+			productName = DaxesVpnNetwork;
+			productReference = 6F568C041FE8356800B7C717 /* DaxesVpnNetwork.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,7 +177,33 @@
 				TargetAttributes = {
 					6F568BE61FE834AE00B7C717 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					6F568C031FE8356800B7C717 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +221,7 @@
 			projectRoot = "";
 			targets = (
 				6F568BE61FE834AE00B7C717 /* DaxesVpn */,
+				6F568C031FE8356800B7C717 /* DaxesVpnNetwork */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +233,13 @@
 			files = (
 				6F568BF51FE834AE00B7C717 /* LaunchScreen.storyboard in Resources */,
 				6F568BF21FE834AE00B7C717 /* Assets.xcassets in Resources */,
-				6F568BF01FE834AE00B7C717 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F568C021FE8356800B7C717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,17 +255,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F568C001FE8356800B7C717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F568C131FE8391900B7C717 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		6F568BEE1FE834AE00B7C717 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F568BEF1FE834AE00B7C717 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		6F568C0B1FE8356800B7C717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F568C031FE8356800B7C717 /* DaxesVpnNetwork */;
+			targetProxy = 6F568C0A1FE8356800B7C717 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		6F568BF31FE834AE00B7C717 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -273,13 +395,17 @@
 		6F568BFA1FE834AE00B7C717 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = DaxesVpn/DaxesVpn.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V3U34J8YU6;
 				INFOPLIST_FILE = DaxesVpn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Daxes-Desai.DaxesVpn";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxes.daxesvpntest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f12a23ff-7b91-4864-9bbc-ad9bca4c80e7";
+				PROVISIONING_PROFILE_SPECIFIER = DaxesVpnApp;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,13 +414,53 @@
 		6F568BFB1FE834AE00B7C717 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = DaxesVpn/DaxesVpn.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V3U34J8YU6;
 				INFOPLIST_FILE = DaxesVpn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Daxes-Desai.DaxesVpn";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxes.daxesvpntest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f12a23ff-7b91-4864-9bbc-ad9bca4c80e7";
+				PROVISIONING_PROFILE_SPECIFIER = DaxesVpnApp;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F568C0E1FE8356800B7C717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DaxesVpnNetwork/DaxesVpnNetwork.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V3U34J8YU6;
+				INFOPLIST_FILE = DaxesVpnNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxes.daxesvpntest.network;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37c9d09e-c3fb-408d-a20d-62ab5a4c34b5";
+				PROVISIONING_PROFILE_SPECIFIER = DaxesVpnNetworkApp;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F568C0F1FE8356800B7C717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DaxesVpnNetwork/DaxesVpnNetwork.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V3U34J8YU6;
+				INFOPLIST_FILE = DaxesVpnNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxes.daxesvpntest.network;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37c9d09e-c3fb-408d-a20d-62ab5a4c34b5";
+				PROVISIONING_PROFILE_SPECIFIER = DaxesVpnNetworkApp;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +483,15 @@
 			buildConfigurations = (
 				6F568BFA1FE834AE00B7C717 /* Debug */,
 				6F568BFB1FE834AE00B7C717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F568C0D1FE8356800B7C717 /* Build configuration list for PBXNativeTarget "DaxesVpnNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F568C0E1FE8356800B7C717 /* Debug */,
+				6F568C0F1FE8356800B7C717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
